@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.3.10
+3 info using node@v5.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/arthur/Development/Web/GetFit/wolfram-fit',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/arthur/.npm/wolfram-fit/0.0.3/package.tgz not in flight; packing
+9 info lifecycle wolfram-fit@0.0.3~prepublish: wolfram-fit@0.0.3
+10 silly lifecycle wolfram-fit@0.0.3~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/arthur/.npm/wolfram-fit/0.0.3/package.tgz',
+11 verbose tar pack   '/home/arthur/Development/Web/GetFit/wolfram-fit' ]
+12 verbose tarball /home/arthur/.npm/wolfram-fit/0.0.3/package.tgz
+13 verbose folder /home/arthur/Development/Web/GetFit/wolfram-fit
+14 verbose addLocalTarball adding from inside cache /home/arthur/.npm/wolfram-fit/0.0.3/package.tgz
+15 silly cache afterAdd wolfram-fit@0.0.3
+16 verbose afterAdd /home/arthur/.npm/wolfram-fit/0.0.3/package/package.json not in flight; writing
+17 verbose afterAdd /home/arthur/.npm/wolfram-fit/0.0.3/package/package.json written
+18 silly publish { name: 'wolfram-fit',
+18 silly publish   version: '0.0.3',
+18 silly publish   description: 'simple wrapper for Wolfram|Alpha api, focused specifically on fitness and nutritional information',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/distrill/wolfram-fit.git' },
+18 silly publish   keywords: [ 'wolfram', 'data', 'fitness' ],
+18 silly publish   author: { name: 'Brent Hamilton' },
+18 silly publish   license: 'MIT',
+18 silly publish   bugs: { url: 'https://github.com/distrill/wolfram-fit/issues' },
+18 silly publish   homepage: 'https://github.com/distrill/wolfram-fit#readme',
+18 silly publish   dependencies: { xml2js: '^0.4.15', request: '^2.67.0' },
+18 silly publish   gitHead: '9ee1d94e5613a005ba5b4a18698a4bd89c3628e1',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'wolfram-fit@0.0.3',
+18 silly publish   _shasum: '1064c34419f398dbf8353c91fa810fa1839c420f',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name wolfram-fit
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/wolfram-fit
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/arthur/.npm/wolfram-fit/0.0.3/package.tgz
+26 verbose request uri https://registry.npmjs.org/wolfram-fit
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 12:19:29 AM
+29 verbose request using bearer token for auth
+30 verbose request id 222fa8412442ef12
+31 http request PUT https://registry.npmjs.org/wolfram-fit
+32 http 403 https://registry.npmjs.org/wolfram-fit
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 05 Jan 2016 08:19:31 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1451981970.289341,VS0,VE1344' }
+34 verbose request invalidating /home/arthur/.npm/registry.npmjs.org/wolfram-fit on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.3." : wolfram-fit
+36 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid wolfram-fit
+39 verbose cwd /home/arthur/Development/Web/GetFit/wolfram-fit
+40 error Linux 4.3.0-1-ARCH
+41 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+42 error node v5.0.0
+43 error npm  v3.3.10
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.3." : wolfram-fit
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

@@ -1,6 +1,6 @@
 {
   "name": "wolfram-fit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "simple wrapper for Wolfram|Alpha api, focused specifically on fitness and nutritional information",
   "main": "index.js",
   "scripts": {
