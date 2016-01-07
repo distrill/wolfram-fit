@@ -1,6 +1,6 @@
 {
   "name": "wolfram-fit",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "simple wrapper for Wolfram|Alpha api, focused specifically on fitness and nutritional information",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,9 @@
   "dependencies": {
     "xml2js": "^0.4.15",
     "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.0.0"
   }
 }
